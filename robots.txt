@@ -1,0 +1,31 @@
+# robots.txt para Blackverse | Blockverse
+# https://blackverse.com/robots.txt
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /order.html
+Allow: /assets/
+
+# Sitemaps
+Sitemap: https://blackverse.com/sitemap.xml
+
+# Crawl-delay (opcional, ajusta según necesites)
+Crawl-delay: 1
+
+# Bloquear rutas no deseadas (si las hay)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Permitir acceso completo a los principales buscadores
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Keywords prioritarias para indexación
+# Blackverse, Blockverse, PC Gaming, RTX 4090, GPU Cloud

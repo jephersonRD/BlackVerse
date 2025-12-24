@@ -1,0 +1,169 @@
+/* ============================================
+   ANIMACIONES MEJORADAS - Bento UI
+   Stagger, Parallax, Micro-interactions
+   ============================================ */
+
+/* ENTRADAS SUAVES */
+@keyframes fade-slide-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-slide-in {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fade-scale {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fade-rotate {
+  from { opacity: 0; transform: rotate(-3deg) scale(0.95); }
+  to { opacity: 1; transform: rotate(0) scale(1); }
+}
+
+/* STAGGER (con delays) */
+.enhanced .anim-in { opacity: 0; transform: translateY(20px); }
+.enhanced .anim-in.is-visible { animation: fade-slide-up 0.7s cubic-bezier(0.22,1,0.36,1) forwards; }
+
+.enhanced .anim-in:nth-child(1) { animation-delay: 0s; }
+.enhanced .anim-in:nth-child(2) { animation-delay: 0.08s; }
+.enhanced .anim-in:nth-child(3) { animation-delay: 0.16s; }
+.enhanced .anim-in:nth-child(4) { animation-delay: 0.24s; }
+.enhanced .anim-in:nth-child(5) { animation-delay: 0.32s; }
+.enhanced .anim-in:nth-child(6) { animation-delay: 0.4s; }
+.enhanced .anim-in:nth-child(7) { animation-delay: 0.48s; }
+.enhanced .anim-in:nth-child(8) { animation-delay: 0.56s; }
+
+.enhanced .anim-scale { opacity: 0; transform: scale(0.92); }
+.enhanced .anim-scale.is-visible { animation: fade-scale 0.6s cubic-bezier(0.34,1.56,0.64,1) forwards; }
+
+.enhanced .anim-rotate { opacity: 0; transform: rotate(-3deg) scale(0.95); }
+.enhanced .anim-rotate.is-visible { animation: fade-rotate 0.8s cubic-bezier(0.22,1,0.36,1) forwards; }
+
+/* POP suave */
+@keyframes pop {
+  0% { transform: scale(0.96); }
+  60% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+.enhanced .anim-pop { animation: pop 0.45s cubic-bezier(0.34,1.56,0.64,1); }
+
+/* PULSE */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(124,58,237,0.5); }
+  50% { box-shadow: 0 0 0 14px rgba(124,58,237,0); }
+}
+.enhanced .anim-pulse { animation: pulse-glow 2.5s ease-in-out infinite; }
+
+/* SHIMMER avanzado */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.enhanced .skeleton {
+  border-radius: 12px;
+  background: linear-gradient(90deg, rgba(18,18,26,0.8) 0%, rgba(40,40,50,0.9) 20%, rgba(18,18,26,0.8) 40%);
+  background-size: 200% 100%;
+  animation: shimmer 2s linear infinite;
+}
+
+/* FLOAT */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.enhanced .anim-float { animation: float 3s ease-in-out infinite; }
+
+/* HOVER GLOW en botones */
+.enhanced .btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(255,255,255,0.18), transparent 65%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+  border-radius: inherit;
+}
+.enhanced .btn:hover::after { opacity: 1; }
+
+/* PARALLAX suave para scroll */
+@keyframes parallax-slow {
+  from { transform: translateY(0); }
+  to { transform: translateY(-40px); }
+}
+
+/* BLUR-IN */
+@keyframes blur-in {
+  from { opacity: 0; filter: blur(8px); }
+  to { opacity: 1; filter: blur(0); }
+}
+.enhanced .anim-blur { opacity: 0; filter: blur(8px); }
+.enhanced .anim-blur.is-visible { animation: blur-in 0.8s ease forwards; }
+
+/* FLIP-IN */
+@keyframes flip-in {
+  from { opacity: 0; transform: perspective(800px) rotateY(-25deg); }
+  to { opacity: 1; transform: perspective(800px) rotateY(0); }
+}
+.enhanced .anim-flip { opacity: 0; transform: perspective(800px) rotateY(-25deg); }
+.enhanced .anim-flip.is-visible { animation: flip-in 0.7s cubic-bezier(0.22,1,0.36,1) forwards; }
+
+/* BOUNCE suave */
+@keyframes bounce-soft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.enhanced .anim-bounce { animation: bounce-soft 1.8s ease-in-out infinite; }
+
+/* SPIN */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.enhanced .anim-spin { animation: spin 20s linear infinite; }
+
+/* GRADIENT ROTATE (fondo animado) */
+@keyframes gradient-rotate {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.enhanced .anim-gradient {
+  background: linear-gradient(135deg, rgba(124,58,237,0.2), rgba(157,78,221,0.15), rgba(124,58,237,0.2));
+  background-size: 200% 200%;
+  animation: gradient-rotate 8s ease infinite;
+}
+
+/* MICRO-INTERACTIONS: Tilt 3D en hover (aplicado via JS) */
+.enhanced .tilt-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.3s cubic-bezier(0.22,1,0.36,1);
+}
+
+/* LOADING SPINNER */
+@keyframes spinner {
+  to { transform: rotate(360deg); }
+}
+.enhanced .spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgba(124,58,237,0.2);
+  border-top-color: #7c3aed;
+  border-radius: 50%;
+  animation: spinner 0.8s linear infinite;
+}
+
+/* ACCESIBILIDAD: deshabilitar animaciones */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

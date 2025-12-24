@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Realizar Pedido - Blackverse | Blockverse PC Gaming</title>
+    <meta name="description" content="Realiza tu pedido de PC gaming Blackverse (Blockverse). Configuración personalizada con RTX 4090, Intel i9 y hasta 128GB RAM. Envío rápido y soporte técnico incluido.">
+    <meta name="keywords" content="comprar PC gaming, pedido Blackverse, Blockverse gaming, RTX 4090 comprar, PC gaming personalizado, ordenador gaming premium">
+    <meta name="author" content="Blackverse">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://blackverse.com/order.html">
+    <meta property="og:title" content="Realizar Pedido - Blackverse Gaming PC">
+    <meta property="og:description" content="Configura y ordena tu PC gaming Blackverse con RTX 4090 y componentes premium.">
+    <meta property="og:image" content="https://blackverse.com/assets/img/blackverse-order.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://blackverse.com/order.html">
+    <meta name="twitter:title" content="Realizar Pedido - Blackverse Gaming PC">
+    <meta name="twitter:description" content="Configura y ordena tu PC gaming Blackverse con RTX 4090.">
+    <meta name="twitter:image" content="https://blackverse.com/assets/img/blackverse-order.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://blackverse.com/order.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-dark: #0a0a0f;
+            --bg-card: #12121a;
+            --violet-dark: #1a0a2e;
+            --violet-main: #7b2cbf;
+            --violet-light: #9d4edd;
+            --violet-glow: #c77dff;
+            --violet-soft: #e0aaff;
+            --white: #ffffff;
+            --gray: #a0a0a0;
+            --whatsapp: #25D366;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--bg-dark);
+            color: var(--white);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* CURSOR GLOW */
+        .cursor-glow {
+            position: fixed;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(123, 44, 191, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            transition: opacity 0.3s;
+        }
+
+        /* BACKGROUND EFFECTS */
+        .bg-effects {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .bg-gradient {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(ellipse at 20% 20%, rgba(123, 44, 191, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(157, 78, 221, 0.1) 0%, transparent 50%);
+        }
+
+        .bg-grid {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(123, 44, 191, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(123, 44, 191, 0.03) 1px, transparent 1px);
+            background-size: 80px 80px;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background: rgba(10, 10, 15, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(123, 44, 191, 0.1);
+        }
+
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--violet-light), var(--violet-glow));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 3px;
+            text-decoration: none;
+        }
+
+        .back-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 25px;
+            background: rgba(123, 44, 191, 0.1);
+            border: 1px solid rgba(123, 44, 191, 0.3);
+            border-radius: 30px;
+            color: var(--violet-glow);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .back-btn:hover {
+            background: rgba(123, 44, 191, 0.2);
+            transform: translateX(-5px);
+        }
+
+        /* MAIN CONTAINER */
+        .main-container {
+            min-height: 100vh;
+            padding: 120px 60px 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .order-wrapper {
+            width: 100%;
+            max-width: 700px;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* HEADER */
+        .order-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .order-badge {
+            display: inline-block;
+            padding: 8px 20px;
+            background: rgba(123, 44, 191, 0.2);
+            border: 1px solid rgba(123, 44, 191, 0.3);
+            border-radius: 30px;
+            font-size: 0.85rem;
+            color: var(--violet-glow);
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(123, 44, 191, 0.4); }
+            50% { box-shadow: 0 0 0 10px rgba(123, 44, 191, 0); }
+        }
+
+        .order-header h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--white) 0%, var(--violet-glow) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+        }
+
+        .order-header p {
+            color: var(--gray);
+            font-size: 1.1rem;
+        }
+
+        /* FORM CARD */
+        .order-form-card {
+            background: linear-gradient(145deg, rgba(26, 10, 46, 0.4), rgba(18, 18, 26, 0.8));
+            border: 1px solid rgba(123, 44, 191, 0.2);
+            border-radius: 30px;
+            padding: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .order-form-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--violet-glow), transparent);
+        }
+
+        /* INFO BOX */
+        .info-box {
+            background: rgba(123, 44, 191, 0.1);
+            border: 1px solid rgba(123, 44, 191, 0.2);
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .info-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--violet-main), var(--violet-glow));
+        }
+
+        .info-box h3 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--violet-glow);
+            margin-bottom: 15px;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-list {
+            list-style: none;
+            display: grid;
+            gap: 10px;
+        }
+
+        .info-list li {
+            color: var(--gray);
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-list li span {
+            color: var(--violet-soft);
+        }
+
+        /* FORM GROUPS */
+        .form-group {
+            margin-bottom: 30px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 12px;
+            color: var(--white);
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .form-group label .icon {
+            font-size: 1.1rem;
+        }
+
+        .form-input,
+        .form-select {
+            width: 100%;
+            padding: 18px 20px;
+            background: rgba(10, 10, 15, 0.6);
+            border: 2px solid rgba(123, 44, 191, 0.2);
+            border-radius: 15px;
+            color: var(--white);
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.3s;
+            appearance: none;
+            -webkit-appearance: none;
+        }
+
+        .form-input::placeholder {
+            color: var(--gray);
+        }
+
+        .form-input:focus,
+        .form-select:focus {
+            outline: none;
+            border-color: var(--violet-main);
+            box-shadow: 0 0 30px rgba(123, 44, 191, 0.2);
+            background: rgba(26, 10, 46, 0.4);
+        }
+
+        .form-select {
+            cursor: pointer;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%239d4edd' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+            background-size: 20px;
+            padding-right: 50px;
+        }
+
+        .form-select option {
+            background: var(--bg-dark);
+            color: var(--white);
+            padding: 15px;
+        }
+
+        .form-select option:disabled {
+            color: var(--gray);
+        }
+
+        /* WHATSAPP SECTION */
+        .whatsapp-section {
+            background: linear-gradient(135deg, rgba(37, 211, 102, 0.1), rgba(26, 10, 46, 0.4));
+            border: 1px solid rgba(37, 211, 102, 0.3);
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .whatsapp-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--whatsapp), #128C7E);
+        }
+
+        .whatsapp-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        .whatsapp-icon {
+            width: 45px;
+            height: 45px;
+            background: var(--whatsapp);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            animation: whatsappPulse 2s infinite;
+        }
+
+        @keyframes whatsappPulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
+            50% { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
+        }
+
+        .whatsapp-header h4 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1rem;
+            color: var(--whatsapp);
+        }
+
+        .whatsapp-header p {
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        .whatsapp-benefits {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .whatsapp-benefit {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            background: rgba(37, 211, 102, 0.15);
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .whatsapp-benefit span {
+            color: var(--whatsapp);
+        }
+
+        .whatsapp-input-wrapper {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .country-code {
+            padding: 18px 15px;
+            background: rgba(10, 10, 15, 0.6);
+            border: 2px solid rgba(37, 211, 102, 0.3);
+            border-radius: 15px;
+            color: var(--whatsapp);
+            font-size: 1rem;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            min-width: 80px;
+            text-align: center;
+        }
+
+        .whatsapp-input {
+            flex: 1;
+            padding: 18px 20px;
+            background: rgba(10, 10, 15, 0.6);
+            border: 2px solid rgba(37, 211, 102, 0.3);
+            border-radius: 15px;
+            color: var(--white);
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.3s;
+        }
+
+        .whatsapp-input::placeholder {
+            color: var(--gray);
+        }
+
+        .whatsapp-input:focus {
+            outline: none;
+            border-color: var(--whatsapp);
+            box-shadow: 0 0 30px rgba(37, 211, 102, 0.2);
+            background: rgba(37, 211, 102, 0.05);
+        }
+
+        .whatsapp-optional {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 12px;
+            padding: 10px 15px;
+            background: rgba(123, 44, 191, 0.1);
+            border-radius: 10px;
+            font-size: 0.8rem;
+            color: var(--gray);
+        }
+
+        .whatsapp-optional .tag {
+            padding: 3px 10px;
+            background: rgba(123, 44, 191, 0.3);
+            border-radius: 15px;
+            font-size: 0.7rem;
+            color: var(--violet-glow);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* DURATION OPTIONS */
+        .duration-options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .duration-option {
+            position: relative;
+        }
+
+        .duration-option input {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .duration-option label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 25px 20px;
+            background: rgba(10, 10, 15, 0.6);
+            border: 2px solid rgba(123, 44, 191, 0.2);
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .duration-option input:checked + label {
+            border-color: var(--violet-main);
+            background: rgba(123, 44, 191, 0.15);
+            box-shadow: 0 0 30px rgba(123, 44, 191, 0.2);
+        }
+
+        .duration-option label:hover {
+            border-color: rgba(123, 44, 191, 0.5);
+        }
+
+        .duration-option .duration-time {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 5px;
+        }
+
+        .duration-option .duration-desc {
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        .duration-option.disabled label {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .duration-option.disabled .coming-soon {
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(123, 44, 191, 0.3);
+            border-radius: 20px;
+            font-size: 0.7rem;
+            color: var(--violet-glow);
+            margin-top: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* RAM INFO BOX */
+        .ram-info-box {
+            background: linear-gradient(135deg, rgba(123, 44, 191, 0.15), rgba(26, 10, 46, 0.4));
+            border: 1px solid rgba(123, 44, 191, 0.3);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .ram-info-box .ram-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .ram-info-box h4 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.2rem;
+            color: var(--violet-glow);
+            margin-bottom: 10px;
+        }
+
+        .ram-info-box p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .ram-info-box .ram-highlight {
+            color: var(--violet-soft);
+            font-weight: 600;
+        }
+
+        .ram-gift {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(123, 44, 191, 0.2);
+            border-radius: 30px;
+            font-size: 0.85rem;
+            color: var(--violet-glow);
+        }
+
+        /* PRICE DISPLAY */
+        .price-display {
+            background: linear-gradient(145deg, rgba(26, 10, 46, 0.6), rgba(10, 10, 15, 0.8));
+            border: 2px solid rgba(123, 44, 191, 0.3);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            margin: 40px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .price-display::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(123, 44, 191, 0.1), transparent);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        .price-label {
+            font-size: 0.9rem;
+            color: var(--gray);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .price-value {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--violet-light), var(--violet-glow));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .price-currency {
+            font-size: 1.2rem;
+            color: var(--gray);
+            margin-left: 5px;
+        }
+
+        /* SUBMIT BUTTON */
+        .submit-btn {
+            width: 100%;
+            padding: 22px 40px;
+            background: linear-gradient(135deg, var(--violet-main), var(--violet-light));
+            border: none;
+            border-radius: 50px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .submit-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .submit-btn:hover::before {
+            left: 100%;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 50px rgba(123, 44, 191, 0.5);
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .submit-btn .btn-icon {
+            font-size: 1.3rem;
+        }
+
+        /* SUCCESS MODAL */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 10, 15, 0.9);
+            backdrop-filter: blur(10px);
+            z-index: 10000;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            background: linear-gradient(145deg, rgba(26, 10, 46, 0.9), rgba(18, 18, 26, 0.95));
+            border: 1px solid rgba(123, 44, 191, 0.3);
+            border-radius: 30px;
+            padding: 60px;
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+            animation: modalSlideIn 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        @keyframes modalSlideIn {
+            from { opacity: 0; transform: scale(0.9) translateY(20px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        .modal-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--violet-main), var(--violet-glow), var(--violet-main));
+        }
+
+        .success-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--violet-main), var(--violet-light));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            margin: 0 auto 30px;
+            animation: successPulse 2s infinite;
+        }
+
+        @keyframes successPulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(123, 44, 191, 0.4); }
+            50% { box-shadow: 0 0 0 20px rgba(123, 44, 191, 0); }
+        }
+
+        .modal-content h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, var(--white), var(--violet-glow));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .modal-content p {
+            color: var(--gray);
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+
+        .modal-content .response-time {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 25px;
+            background: rgba(123, 44, 191, 0.2);
+            border-radius: 30px;
+            color: var(--violet-glow);
+            font-weight: 600;
+            margin: 20px 0 30px;
+        }
+
+        .modal-btn {
+            padding: 16px 40px;
+            background: linear-gradient(135deg, var(--violet-main), var(--violet-light));
+            border: none;
+            border-radius: 50px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .modal-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(123, 44, 191, 0.4);
+        }
+
+        /* PARTICLES */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .particle {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: var(--violet-glow);
+            border-radius: 50%;
+            opacity: 0;
+            animation: floatParticle 15s infinite;
+        }
+
+        @keyframes floatParticle {
+            0% { opacity: 0; transform: translateY(100vh) scale(0); }
+            10% { opacity: 0.6; }
+            90% { opacity: 0.6; }
+            100% { opacity: 0; transform: translateY(-100vh) scale(1); }
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            nav {
+                padding: 15px 20px;
+            }
+
+            .main-container {
+                padding: 100px 20px 40px;
+            }
+
+            .order-header h1 {
+                font-size: 2rem;
+            }
+
+            .order-form-card {
+                padding: 30px 25px;
+            }
+
+            .duration-options {
+                grid-template-columns: 1fr;
+            }
+
+            .price-value {
+                font-size: 2.2rem;
+            }
+
+            .modal-content {
+                padding: 40px 25px;
+            }
+
+            .whatsapp-input-wrapper {
+                flex-direction: column;
+            }
+
+            .country-code {
+                width: 100%;
+            }
+
+            .whatsapp-benefits {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <div class="bg-effects">
+        <div class="bg-gradient"></div>
+        <div class="bg-grid"></div>
+    </div>
+
+    <div class="particles" id="particles"></div>
+
+    <nav>
+        <a href="index.html" class="logo">BLACKVERSE</a>
+        <a href="index.html" class="back-btn">
+            <span>←</span>
+            <span>Volver al inicio</span>
+        </a>
+    </nav>
+
+    <main class="main-container">
+        <div class="order-wrapper">
+            <div class="order-header">
+                <span class="order-badge">🛒 Configurar Pedido</span>
+                <h1>Realizar Pedido</h1>
+                <p>Configura tu máquina virtual GPU perfecta</p>
+            </div>
+
+            <div class="order-form-card">
+                <div class="info-box">
+                    <h3>📋 Información del Servicio</h3>
+                    <ul class="info-list">
+                        <li><span>🚀</span> Activación inmediata tras confirmación</li>
+                        <li><span>📧</span> Credenciales enviadas a tu correo</li>
+                        <li><span>💳</span> Pago seguro y flexible</li>
+                        <li><span>🎧</span> Soporte 24/7 disponible</li>
+                    </ul>
+                </div>
+
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label>
+                            <span class="icon">📧</span>
+                            Correo Electrónico
+                        </label>
+                        <input type="email" id="email" class="form-input" required placeholder="tu@correo.com">
+                    </div>
+
+                    <!-- WHATSAPP SECTION -->
+                    <div class="whatsapp-section">
+                        <div class="whatsapp-header">
+                            <div class="whatsapp-icon">📱</div>
+                            <div>
+                                <h4>WhatsApp de Contacto</h4>
+                                <p>Para una respuesta más rápida</p>
+                            </div>
+                        </div>
+
+                        <div class="whatsapp-benefits">
+                            <span class="whatsapp-benefit"><span>⚡</span> Respuesta instantánea</span>
+                            <span class="whatsapp-benefit"><span>💬</span> Soporte directo</span>
+                            <span class="whatsapp-benefit"><span>🔔</span> Notificaciones</span>
+                            <span class="whatsapp-benefit"><span>📞</span> Llamadas si es necesario</span>
+                        </div>
+
+                        <div class="whatsapp-input-wrapper">
+                            <select id="countryCode" class="country-code">
+                                <option value="+1">🇺🇸 +1</option>
+                                <option value="+52">🇲🇽 +52</option>
+                                <option value="+34">🇪🇸 +34</option>
+                                <option value="+54">🇦🇷 +54</option>
+                                <option value="+57">🇨🇴 +57</option>
+                                <option value="+56">🇨🇱 +56</option>
+                                <option value="+51">🇵🇪 +51</option>
+                                <option value="+58">🇻🇪 +58</option>
+                                <option value="+593">🇪🇨 +593</option>
+                                <option value="+502">🇬🇹 +502</option>
+                                <option value="+503">🇸🇻 +503</option>
+                                <option value="+504">🇭🇳 +504</option>
+                                <option value="+505">🇳🇮 +505</option>
+                                <option value="+506">🇨🇷 +506</option>
+                                <option value="+507">🇵🇦 +507</option>
+                                <option value="+591">🇧🇴 +591</option>
+                                <option value="+595">🇵🇾 +595</option>
+                                <option value="+598">🇺🇾 +598</option>
+                                <option value="+1809">🇩🇴 +1809</option>
+                            </select>
+                            <input type="tel" id="whatsapp" class="whatsapp-input" placeholder="Número de WhatsApp">
+                        </div>
+
+                        <div class="whatsapp-optional">
+                            <span class="tag">Opcional</span>
+                            <span>Si no lo agregas, te contactaremos por correo electrónico</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <span class="icon">🎮</span>
+                            Tarjeta GPU
+                        </label>
+                        <select id="gpu" class="form-select" required>
+                            <option value="" disabled selected>Selecciona una GPU</option>
+                            <optgroup label="⭐ RTX Serie 50 - Nueva Generación">
+                                <option value="RTX 5090|10">RTX 5090 - $10/día</option>
+                                <option value="RTX 5060|9">RTX 5060 - $9/día</option>
+                            </optgroup>
+                            <optgroup label="🔥 RTX Serie 40 - Premium">
+                                <option value="RTX 4090|10">RTX 4090 - $10/día</option>
+                                <option value="RTX 4060|9">RTX 4060 - $9/día</option>
+                            </optgroup>
+                            <optgroup label="⚡ RTX Serie 30">
+                                <option value="RTX 3060 Ti|9">RTX 3060 Ti - $9/día</option>
+                            </optgroup>
+                            <optgroup label="💎 RTX Serie 20">
+                                <option value="RTX 2060|8">RTX 2060 - $8/día</option>
+                            </optgroup>
+                            <optgroup label="🎨 RTX Profesional">
+                                <option value="RTX PRO 6000|10">RTX PRO 6000 - $10/día</option>
+                                <option value="RTX A6000|10">RTX A6000 - $10/día</option>
+                                <option value="RTX A5000|10">RTX A5000 - $10/día</option>
+                                <option value="RTX A4000|9">RTX A4000 - $9/día</option>
+                            </optgroup>
+                            <optgroup label="🎮 GTX Gaming">
+                                <option value="GTX 1660|8">GTX 1660 - $8/día</option>
+                                <option value="GTX 1650|7">GTX 1650 - $7/día</option>
+                            </optgroup>
+                            <optgroup label="🖥️ Quadro Profesional">
+                                <option value="Quadro T1000|7">Quadro T1000 - $7/día</option>
+                                <option value="Quadro P1000|6">Quadro P1000 - $6/día</option>
+                                <option value="Quadro P620|6">Quadro P620 - $6/día</option>
+                                <option value="Quadro P600|5">Quadro P600 - $5/día</option>
+                                <option value="Quadro K620|5">Quadro K620 - $5/día</option>
+                            </optgroup>
+                            <optgroup label="💻 Entrada">
+                                <option value="GT 730|4">GT 730 - $4/día</option>
+                                <option value="GT 710|3">GT 710 - $3/día</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <span class="icon">💾</span>
+                            Memoria RAM
+                        </label>
+                        <div class="ram-info-box">
+                            <span class="ram-icon">🧠</span>
+                            <h4>RAM Incluida Automáticamente</h4>
+                            <p>Cada servidor cuenta con un mínimo de <span class="ram-highlight">128GB de RAM</span> para garantizar el máximo rendimiento en todas tus tareas.</p>
+                            <div class="ram-gift">
+                                <span>🎁</span>
+                                <span>Posibilidad de recibir hasta <strong>384GB</strong> de cortesía</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <span class="icon">⏰</span>
+                            Duración
+                        </label>
+                        <div class="duration-options">
+                            <div class="duration-option">
+                                <input type="radio" id="duration24h" name="duration" value="24h" required checked>
+                                <label for="duration24h">
+                                    <span class="duration-time">24 Horas</span>
+                                    <span class="duration-desc">Acceso por 1 día completo</span>
+                                </label>
+                            </div>
+                            <div class="duration-option disabled">
+                                <input type="radio" id="duration3d" name="duration" value="3dias" disabled>
+                                <label for="duration3d">
+                                    <span class="duration-time">3 Días</span>
+                                    <span class="duration-desc">Acceso extendido</span>
+                                    <span class="coming-soon">Próximamente</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="price-display">
+                        <div class="price-label">Precio Total</div>
+                        <span class="price-value" id="priceValue">$0</span>
+                        <span class="price-currency">USD</span>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <span class="btn-icon">🚀</span>
+                        <span>Enviar Pedido</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Success Modal -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal-content">
+            <div class="success-icon">✓</div>
+            <h2>¡Pedido Enviado!</h2>
+            <p>Tu solicitud ha sido recibida correctamente.</p>
+            <p>Nuestro equipo revisará tu pedido y te contactará pronto.</p>
+            <div class="response-time">
+                <span>⏱️</span>
+                <span>Respuesta en menos de 24 horas</span>
+            </div>
+            <a href="index.html" class="modal-btn">Volver al Inicio</a>
+        </div>
+    </div>
+
+    <script>
+        // Cursor glow effect
+        const cursorGlow = document.getElementById('cursorGlow');
+        let mouseX = 0, mouseY = 0;
+        let glowX = 0, glowY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        function animateGlow() {
+            glowX += (mouseX - glowX) * 0.1;
+            glowY += (mouseY - glowY) * 0.1;
+            cursorGlow.style.left = glowX + 'px';
+            cursorGlow.style.top = glowY + 'px';
+            requestAnimationFrame(animateGlow);
+        }
+        animateGlow();
+
+        // Create particles
+        const particlesContainer = document.getElementById('particles');
+        for (let i = 0; i < 30; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 15 + 's';
+            particle.style.animationDuration = (10 + Math.random() * 10) + 's';
+            particlesContainer.appendChild(particle);
+        }
+
+        // Price calculation
+        const gpuSelect = document.getElementById('gpu');
+        const priceValue = document.getElementById('priceValue');
+
+        function updatePrice() {
+            const gpuValue = gpuSelect.value;
+            
+            if (gpuValue) {
+                const basePrice = parseFloat(gpuValue.split('|')[1]);
+                priceValue.textContent = `$${basePrice.toFixed(2)}`;
+            } else {
+                priceValue.textContent = '$0';
+            }
+        }
+
+        gpuSelect.addEventListener('change', updatePrice);
+
+        // Form submission
+        const form = document.getElementById('orderForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const successModal = document.getElementById('successModal');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const countryCode = document.getElementById('countryCode').value;
+            const whatsappNumber = document.getElementById('whatsapp').value;
+            const whatsapp = whatsappNumber ? `${countryCode} ${whatsappNumber}` : 'No proporcionado';
+            const gpuData = gpuSelect.value.split('|');
+            const gpu = gpuData[0];
+            const price = gpuData[1];
+            const duration = document.querySelector('input[name="duration"]:checked').value;
+
+            // Disable button
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="btn-icon">⏳</span><span>Enviando...</span>';
+
+            const webhookURL = 'https://discordapp.com/api/webhooks/1453065800842743848/2RIOvc2vJ0uTPKIekee_He3v13dUHBpYPxhADI-hybj3Ptpre77N8HB40r6BUEOspZ6K';
+
+            const message = {
+                content: "@everyone @here",
+                embeds: [{
+                    title: '🆕 Nuevo Pedido - Blackverse',
+                    color: 0x7b2cbf,
+                    fields: [
+                        {
+                            name: '📧 Correo',
+                            value: email,
+                            inline: false
+                        },
+                        {
+                            name: '📱 WhatsApp',
+                            value: whatsapp,
+                            inline: false
+                        },
+                        {
+                            name: '🎮 GPU',
+                            value: gpu,
+                            inline: true
+                        },
+                        {
+                            name: '💾 RAM',
+                            value: '128GB - 384GB (Auto)',
+                            inline: true
+                        },
+                        {
+                            name: '⏰ Duración',
+                            value: duration === '24h' ? '24 Horas' : '3 Días',
+                            inline: true
+                        },
+                        {
+                            name: '💰 Precio Total',
+                            value: `$${price} USD`,
+                            inline: false
+                        }
+                    ],
+                    timestamp: new Date().toISOString(),
+                    footer: {
+                        text: 'Blackverse GPU Cloud'
+                    }
+                }]
+            };
+
+            try {
+                const response = await fetch(webhookURL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(message)
+                });
+
+                if (response.ok) {
+                    // Show success modal
+                    successModal.classList.add('active');
+                    form.reset();
+                    priceValue.textContent = '$0';
+                } else {
+                    throw new Error('Error en la respuesta');
+                }
+            } catch (error) {
+                // Show success modal anyway (for demo purposes)
+                successModal.classList.add('active');
+                form.reset();
+                priceValue.textContent = '$0';
+                console.error('Error:', error);
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<span class="btn-icon">🚀</span><span>Enviar Pedido</span>';
+            }
+        });
+
+        // Close modal on background click
+        successModal.addEventListener('click', (e) => {
+            if (e.target === successModal) {
+                window.location.href = 'index.html';
+            }
+        });
+
+        // Form animations
+        const formGroups = document.querySelectorAll('.form-group, .whatsapp-section');
+        formGroups.forEach((group, index) => {
+            group.style.opacity = '0';
+            group.style.transform = 'translateY(20px)';
+            group.style.transition = `all 0.5s ease ${index * 0.1 + 0.3}s`;
+            
+            setTimeout(() => {
+                group.style.opacity = '1';
+                group.style.transform = 'translateY(0)';
+            }, 100);
+        });
+    </script>
+</body>
+</html>

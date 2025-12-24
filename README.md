@@ -1,6 +1,6 @@
-# 🎮 Gaming PC Landing Page
+# 🎮 Blackverse | Blockverse - Gaming PC Landing Page
 
-> Una landing page moderna y elegante para la venta de PCs gaming de alta gama, construida con HTML puro, CSS avanzado y JavaScript vanilla.
+> Landing page oficial de **Blackverse** (también conocido como **Blockverse**) - Líder en PCs gaming de alta gama y soluciones GPU Cloud. Construida con HTML puro, CSS avanzado y JavaScript vanilla para máximo rendimiento.
 
 [![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/es/docs/Web/CSS)
@@ -8,6 +8,16 @@
 
 ![Preview](https://img.shields.io/badge/Estado-Producción-success?style=for-the-badge)
 ![Versión](https://img.shields.io/badge/Versión-1.0.0-blue?style=for-the-badge)
+
+---
+
+## 🌟 Sobre Blackverse | Blockverse
+
+**Blackverse** (también conocido como **Blockverse**) es la marca premium líder en:
+- 🖥️ **PCs Gaming de Alto Rendimiento** - Configuraciones con NVIDIA RTX 4090
+- ☁️ **GPU Cloud Computing** - Soluciones de computación en la nube
+- 🎮 **Gaming Profesional** - Equipos para streamers y gamers profesionales
+- 💻 **Workstations Premium** - Para creadores de contenido y desarrolladores
 
 ---
 
@@ -48,7 +58,9 @@
 
 ## 🚀 Demo en Vivo
 
-🔗 **[Ver Demo](https://tu-usuario.github.io/gaming-pc-landing)**
+🔗 **[Ver Demo](https://blackverse.com)** | 🛒 **[Hacer Pedido](https://blackverse.com/order.html)**
+
+**Keywords de búsqueda:** Blackverse, Blockverse, PC Gaming, RTX 4090, GPU Cloud
 
 ---
 
@@ -118,10 +130,10 @@ web/
 ### Opción 1: Clonar y Ejecutar
 ```bash
 # Clonar el repositorio
-git clone https://github.com/tu-usuario/gaming-pc-landing.git
+git clone https://github.com/blackverse/blackverse-landing.git
 
 # Navegar al directorio
-cd gaming-pc-landing
+cd blackverse-landing
 
 # Abrir con un servidor local (ejemplo con Python)
 python -m http.server 8000
@@ -274,7 +286,7 @@ card.addEventListener('mousemove', (e) => {
 
 ## 🐛 Reportar Bugs
 
-¿Encontraste un bug? Por favor abre un [issue](https://github.com/tu-usuario/gaming-pc-landing/issues) con:
+¿Encontraste un bug? Por favor abre un [issue](https://github.com/blackverse/blackverse-landing/issues) con:
 - Descripción clara del problema
 - Pasos para reproducirlo
 - Comportamiento esperado vs actual
@@ -290,7 +302,7 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 ```
 MIT License
 
-Copyright (c) 2025 [Tu Nombre]
+Copyright (c) 2025 Blackverse (Blockverse)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -299,14 +311,15 @@ in the Software without restriction...
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Equipo Blackverse | Blockverse
 
-**Tu Nombre**
+**Blackverse Team**
 
-- GitHub: [@tu-usuario](https://github.com/tu-usuario)
-- LinkedIn: [Tu Perfil](https://linkedin.com/in/tu-perfil)
-- Twitter: [@tu-usuario](https://twitter.com/tu-usuario)
-- Portfolio: [tu-sitio.com](https://tu-sitio.com)
+- 🌐 Website: [blackverse.com](https://blackverse.com)
+- 📧 Email: contact@blackverse.com
+- 🐦 Twitter: [@blackverse](https://twitter.com/blackverse)
+- 📸 Instagram: [@blackverse](https://instagram.com/blackverse)
+- 💼 LinkedIn: [Blackverse](https://linkedin.com/company/blackverse)
 
 ---
 
