@@ -108,6 +108,16 @@
             overflow-x: hidden;
         }
 
+        /* Medios fluidos y tipografía más legible en bloques */
+        img, svg, video, canvas {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        p, li, label, input, select, textarea { font-family: 'Poppins', sans-serif; }
+        h1, h2, h3, h4 { letter-spacing: 0.5px; }
+
+
         /* CURSOR GLOW */
         .cursor-glow {
             position: fixed;
@@ -308,6 +318,10 @@
         }
 
         .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
             padding: 18px 45px;
             background: linear-gradient(135deg, var(--violet-main), var(--violet-light));
             border: none;
@@ -1201,6 +1215,53 @@
             .nav-btn { padding: 12px 16px; font-size: 0.95rem; }
             .section-title { font-size: 1.6rem; }
             .stats-bar { gap: 20px; }
+        }
+        /* Accesibilidad y comportamiento en móvil */
+        @media (hover: none) {
+            .cursor-glow { display: none; }
+        }
+
+        /* Ajustes generales de secciones para evitar superposiciones y asfixia */
+        section { position: relative; z-index: 0; }
+        .cta-section { isolation: isolate; }
+
+        /* Botón de pedido en CTA: robusto y centrado */
+        .cta-box .btn-primary { width: 100%; max-width: 420px; margin-inline: auto; }
+
+        /* Imagen de la GPU: evitar recortes laterales */
+        .hero-image { overflow: visible; }
+        .gpu-container { margin-inline: auto; }
+
+        @media (max-width: 992px) {
+            .features { padding: 80px 24px; }
+            .gpu-section { padding: 80px 24px; }
+            .contact-section { padding: 80px 24px; }
+            .cta-section { padding: 100px 24px; }
+        }
+
+        @media (max-width: 768px) {
+            /* Navbar menos invasiva */
+            nav { background: rgba(10,10,15,0.6); border-bottom: 1px solid rgba(123,44,191,0.18); }
+
+            /* Hero imagen más contenida para no cortar laterales */
+            .gpu-image { max-width: min(82vw, 480px); filter: drop-shadow(0 20px 40px rgba(123,44,191,0.45)); }
+
+            /* CTA más legible en pantallas chicas */
+            .cta-box { padding: 40px 24px; border-radius: 28px; }
+            .cta-box h2 { font-size: 1.9rem; }
+            .cta-box p { font-size: 1rem; line-height: 1.7; }
+
+            /* Coherencia de botones (alto y separación) */
+            .btn-secondary { padding: 16px 22px; font-size: 1rem; }
+        }
+
+        @media (max-width: 480px) {
+            /* Aún más margen para evitar sensación de asfixia */
+            .features, .gpu-section, .contact-section { padding: 70px 16px; }
+            .cta-section { padding: 90px 16px; }
+
+            /* Limitar tamaño de la GPU y reducir rotación visual (quitando animación) */
+            .gpu-image { max-width: 78vw; animation: none; transform: none; }
         }
     </style>
 </head>
