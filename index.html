@@ -961,18 +961,21 @@
 
         .contact-info {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 35px;
+            max-width: 1000px;
+            margin: 0 auto;
         }
 
         .contact-card {
             background: linear-gradient(145deg, rgba(18, 18, 26, 0.9), rgba(26, 10, 46, 0.4));
             border: 1px solid rgba(123, 44, 191, 0.2);
             border-radius: 20px;
-            padding: 30px;
+            padding: 50px 40px;
             transition: all 0.4s;
             position: relative;
             overflow: hidden;
+            text-align: center;
         }
 
         .contact-card::before {
@@ -998,15 +1001,15 @@
         }
 
         .contact-icon {
-            width: 60px;
-            height: 60px;
+            width: 80px;
+            height: 80px;
             background: linear-gradient(135deg, var(--violet-main), var(--violet-light));
-            border-radius: 16px;
+            border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.8rem;
-            margin-bottom: 20px;
+            font-size: 2.5rem;
+            margin: 0 auto 25px;
             transition: transform 0.4s;
         }
 
@@ -1016,15 +1019,15 @@
 
         .contact-card h3 {
             font-family: 'Orbitron', sans-serif;
-            font-size: 1.3rem;
-            margin-bottom: 10px;
+            font-size: 1.6rem;
+            margin-bottom: 15px;
             color: var(--white);
         }
 
         .contact-card p {
             color: var(--gray);
-            font-size: 0.9rem;
-            margin-bottom: 15px;
+            font-size: 1.05rem;
+            margin-bottom: 25px;
         }
 
         .contact-link {
@@ -1567,24 +1570,17 @@
         <div class="contact-container">
             <div class="contact-info">
                 <div class="contact-card">
-                    <div class="contact-icon">📧</div>
-                    <h3>Email</h3>
-                    <p>Respuesta en menos de 24 horas</p>
-                    <a href="mailto:support@blackverse.com" class="contact-link">support@blackverse.com</a>
-                </div>
-
-                <div class="contact-card">
                     <div class="contact-icon">💬</div>
-                    <h3>WhatsApp</h3>
-                    <p>Respuesta inmediata</p>
-                    <a href="https://wa.me/1234567890" target="_blank" class="contact-link">Enviar mensaje</a>
+                    <h3>Escríbenos a WhatsApp</h3>
+                    <p>Respuesta inmediata directamente</p>
+                    <a href="https://wa.me/50236145970?text=Hola%20Blackverse,%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios" target="_blank" class="btn-primary" style="display: inline-block; text-decoration: none; margin-top: 10px;">Chatear en WhatsApp</a>
                 </div>
 
                 <div class="contact-card">
-                    <div class="contact-icon">🎧</div>
-                    <h3>Soporte 24/7</h3>
-                    <p>Siempre disponibles para ti</p>
-                    <a href="#" class="contact-link">Chat en vivo</a>
+                    <div class="contact-icon">🎮</div>
+                    <h3>Canal de Discord Oficial</h3>
+                    <p>Únete a nuestra comunidad</p>
+                    <a href="https://discord.com/invite/e8rtN5Juqq" target="_blank" class="btn-primary" style="display: inline-block; text-decoration: none; margin-top: 10px;">Unirse al Discord</a>
                 </div>
             </div>
 
