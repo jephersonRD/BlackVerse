@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#080b10"/>
+  
+  <!-- Background orbs -->
+  <circle cx="200" cy="200" r="300" fill="#a78bfa" opacity="0.15"/>
+  <circle cx="1000" cy="400" r="250" fill="#67e8f9" opacity="0.1"/>
+  <circle cx="600" cy="500" r="200" fill="#86efac" opacity="0.1"/>
+  
+  <!-- Grid pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="1" fill="#ffffff" opacity="0.05"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  
+  <!-- Logo -->
+  <text x="600" y="280" font-family="sans-serif" font-size="120" font-weight="800" fill="#a78bfa" text-anchor="middle" letter-spacing="8">BLACKVERSE</text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="360" font-family="monospace" font-size="28" fill="#67e8f9" text-anchor="middle">GPU Cloud de Alto Rendimiento</text>
+  
+  <!-- Features -->
+  <text x="600" y="450" font-family="monospace" font-size="20" fill="#86efac" text-anchor="middle">RTX 4090 • Desde $3/dia • 24/7 Soporte</text>
+  
+  <!-- Bottom text -->
+  <text x="600" y="580" font-family="monospace" font-size="16" fill="#ffffff" opacity="0.4" text-anchor="middle">blackverse.com</text>
+</svg>
