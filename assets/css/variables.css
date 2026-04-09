@@ -1,0 +1,86 @@
+/* ============================================
+   BlackVerse — Glassmorphism Design System
+   Variables
+   ============================================ */
+
+:root {
+  /* Backgrounds */
+  --bg-dark: #080b10;
+  --bg-panel: rgba(255, 255, 255, 0.04);
+  --bg-panel-hover: rgba(255, 255, 255, 0.07);
+  --bg-panel-solid: #0d1117;
+
+  /*Borders */
+  --border-glass: rgba(255, 255, 255, 0.10);
+  --border-glass-hover: rgba(255, 255, 255, 0.20);
+  --border-subtle: rgba(255, 255, 255, 0.06);
+
+  /* Accent Colors */
+  --accent-purple: #a78bfa;
+  --accent-cyan: #67e8f9;
+  --accent-green: #86efac;
+  --accent-purple-dim: rgba(167, 139, 250, 0.15);
+  --accent-cyan-dim: rgba(103, 232, 249, 0.15);
+  --accent-green-dim: rgba(134, 239, 172, 0.15);
+  --accent-purple-glow: rgba(167, 139, 250, 0.4);
+  --accent-cyan-glow: rgba(103, 232, 249, 0.4);
+  --accent-green-glow: rgba(134, 239, 172, 0.4);
+
+  /* Text */
+  --text-primary: #f0f0f5;
+  --text-secondary: rgba(240, 240, 245, 0.65);
+  --text-tertiary: rgba(240, 240, 245, 0.35);
+
+  /* Typography */
+  --font-display: 'Syne', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-body: 'Space Mono', monospace;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+  --space-5xl: 128px;
+  --space-section: clamp(80px, 10vw, 140px);
+
+  /* Radius */
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  /* Blur */
+  --blur-sm: 12px;
+  --blur-md: 20px;
+  --blur-lg: 40px;
+
+  /* Shadows */
+  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.3);
+  --shadow-glow-purple: 0 0 30px rgba(167, 139, 250, 0.15);
+  --shadow-glow-cyan: 0 0 30px rgba(103, 232, 249, 0.15);
+  --shadow-glow-green: 0 0 30px rgba(134, 239, 172, 0.15);
+
+  /* Transitions */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --speed-fast: 150ms;
+  --speed: 300ms;
+  --speed-slow: 600ms;
+
+  /* Z-index */
+  --z-orb: -1;
+  --z-noise: 1;
+  --z-content: 10;
+  --z-navbar: 100;
+  --z-cursor: 1000;
+
+  /* Grid */
+  --grid-max: 1200px;
+  --grid-padding: clamp(20px, 4vw, 60px);
+}
